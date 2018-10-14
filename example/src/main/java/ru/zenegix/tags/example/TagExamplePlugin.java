@@ -44,7 +44,7 @@ public class TagExamplePlugin extends JavaPlugin implements Listener {
             this.tagTeam = tagManager.commonTagTeamBuilder()
                     .setPriority(1)
                     .setPrefix("Player ")
-                    .setSuffix(" §6*")
+                    .setSuffix(" &6*")
                     .build();
         }
 
@@ -56,11 +56,11 @@ public class TagExamplePlugin extends JavaPlugin implements Listener {
                     Player receiver = data.getReceiver();
 
                     return player == receiver
-                            ? "§fMe §a"
-                            : "§fNot me §c";
+                            ? "&fMe &a"
+                            : "&fNot me &c";
                 });
             } else {
-                ((CachedRender) this.tagTeam.getPrefix()).setText("§fPlayer §7");
+                ((CachedRender) this.tagTeam.getPrefix()).setText("&fPlayer &7");
             }
 
             // Forced update, because there is no guarantee that the task is to update

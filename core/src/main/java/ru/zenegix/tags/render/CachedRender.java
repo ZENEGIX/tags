@@ -1,15 +1,17 @@
 package ru.zenegix.tags.render;
 
+import org.bukkit.ChatColor;
+
 public class CachedRender implements Renderable {
 
     private String text;
 
     public CachedRender(String text) {
-        this.text = text;
+        this.setText(text);
     }
 
     public void setText(String text) {
-        this.text = text;
+        this.text = ChatColor.translateAlternateColorCodes('&', text);
     }
 
     @Override

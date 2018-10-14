@@ -1,5 +1,7 @@
 package ru.zenegix.tags.render;
 
+import org.bukkit.ChatColor;
+
 import java.util.function.Function;
 
 public class DynamicRender implements Renderable {
@@ -17,8 +19,11 @@ public class DynamicRender implements Renderable {
 
     @Override
     public String render(RenderData data) {
+        Object result = this.textFunction.apply(data);
 
-        return this.textFunction.apply(data).toString();
+        return result == null
+                ? null
+                : ChatColor.translateAlternateColorCodes('&', result.toString());
     }
 
 }
