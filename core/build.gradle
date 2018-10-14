@@ -1,0 +1,24 @@
+group 'ru.zenegix.tags'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url = 'http://repo.dmulloy2.net/nexus/repository/public/'
+    }
+}
+
+dependencies {
+    compileOnly 'com.comphenix.protocol:ProtocolLib-API:4.4.0'
+    compileOnly 'org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT'
+}
+
+shadowJar {
+    classifier null
+}
+
+build.dependsOn(shadowJar)

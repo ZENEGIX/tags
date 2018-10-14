@@ -1,0 +1,6 @@
+name: PixelEconomy.TagsPlugin
+main: ru.zenegix.tags.test.TagsPlugin
+author: ZENEGIX
+version: 1.0
+depend: [ProtocolLib]
+softdepend: [ProtocolLib]

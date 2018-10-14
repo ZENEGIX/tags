@@ -1,0 +1,6 @@
+name: TagExamplePlugin
+main: ru.zenegix.tags.example.TagExamplePlugin
+author: ZENEGIX
+version: 1.0
+depend: [LoneyTags]
+softdepend: [LoneyTags]

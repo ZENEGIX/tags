@@ -1,0 +1,6 @@
+name: LoneyTags
+main: ru.zenegix.tags.bukkit.LoneyTags
+author: ZENEGIX
+version: 1.0
+depend: [ProtocolLib]
+softdepend: [ProtocolLib]

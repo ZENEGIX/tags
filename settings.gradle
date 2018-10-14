@@ -1,0 +1,8 @@
+rootProject.name = 'tags'
+include 'core'
+findProject(':core')?.name = 'tags-core'
+include 'example'
+findProject(':example')?.name = 'tags-example'
+include 'bukkit-plugin'
+findProject(':bukkit-plugin')?.name = 'tags-bukkit-plugin'
+
